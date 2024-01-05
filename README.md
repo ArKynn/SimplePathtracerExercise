@@ -57,7 +57,7 @@ Ao invés disto eu obti uma imagem onde os não apresentavam redução na intens
 
 Sem conseguir resolver, decidi prosseguir com o livro, já que o problema estava relacionado com o material das esferas.  
 
-De seguida introduzi os materiais Metal e Labertian. Estes materiais apresentam diferentes formas em como os raios refletem na superficie da esfera: O material Metal reflete os raios como se fosse um espelho e o material Lambertian reflete os raios numa direção aleatória e atenua a cor do raio.  
+De seguida introduzi os materiais Metal e Labertian. Estes materiais apresentam diferentes formas em como os raios refletem na superficie da esfera: O material Metal reflete perfeitamente os raios sem estes atenuarem a sua cor, e o material Lambertian reflete os raios numa direção aleatória e atenua a cor do raio.  
 
 Quando testei o programa, deparei-me com um grande problema: Como tenho estado a seguir o autor que mostra código em c++, tive de o converter em algo semelhante em c#. No metodo scatter dos materiais que introduzi, não consigo reter as mudanças que o metodo faz numa variavel e isto causa que o programa pare de funcionar. Experimentei várias soluções mas nada resolveu. Com isto, não consegui continuar com o trabalho.  
 
@@ -67,8 +67,9 @@ Durante a criação do programa, não guardei o meu progresso, por exemplo, em g
   
 Durante a criação do programa, fiquei muito colado ao código do autor. Enquanto que isto pode não ser um grande problema, visto que estava a programar numa outra linguagem de programação, fêz com que eu tivesse vários problemas com a minha iteração do renderizador, que me custou muito tempo.  
 
-## O que eu gostaria de adicionar:  
+## O que faltou adicionar ao projeto:  
 
-Gostaria de adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
-Gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
-Mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.
+A meu ver, faltou adicionar os parâmetros Metalic e Smoothness aos materais e uma equação de calculo de côr e refleção mais universal. Neste momento, os materiais ou são metálicos, ou são difusos. Com uma equação geral e estes parâmetros, permite ao renderizador apresentar mais materiais diversos diferentes dos dois já adicionados.
+A meu ver, faltou adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
+Adicionalmente, gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
+Adicionalmente, mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.
