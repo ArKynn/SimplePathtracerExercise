@@ -72,4 +72,10 @@ Durante a criação do programa, fiquei muito colado ao código do autor. Enquan
 A meu ver, faltou adicionar os parâmetros Metalic e Smoothness aos materais e uma equação de calculo de côr e refleção mais universal. Neste momento, os materiais ou são metálicos, ou são difusos. Com uma equação geral e estes parâmetros, permite ao renderizador apresentar mais materiais diversos diferentes dos dois já adicionados.
 A meu ver, faltou adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
 Adicionalmente, gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
-Adicionalmente, mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.
+Adicionalmente, mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.  
+
+## Conclusões:  
+
+Com este projeto, consegui mergulhar um pouco por dentro de como um pathtracer funciona. Aprendi como representamos o mundo atravéz de código e como traduzimos diversos fenómenos fisicos relacionados à luz em código. Apesar de não incluir no meu projeto, consegui aprender como representamos luz e sombras e diversas metodologias para o fazer.  
+Infelizmente, não consegui obter um produto final funcional mas consegui aproveitar o periodo em que o renderizador fundionava para aprender como representamos raios, reflexões e materiais e como os manipulamos para representar o mundo á nossa volta.  
+De certeza que irei futuramente voltar a este tema para poder obter um renderizador que representa precisamente os efeitos da luz em um meio fisico.
