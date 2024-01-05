@@ -1,6 +1,8 @@
 # Computação Gráfica - Pathtracer Simples
 ## Trabalho Realizado por:  
-- David Mendes 22203255  
+- David Mendes 22203255
+## Link para o repositório:  
+https://github.com/ArKynn/SimplePathtracerExercise
 ## Relatório:  
 
 Começei este trabalho com uma pesquisa acerca do que é um PathTracer e como o mesmo funciona.  
