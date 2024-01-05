@@ -34,7 +34,7 @@ Esta é a imagem resultante por agora:
 ![img-1 02-blue-to-white](https://github.com/ArKynn/SimplePathtracerExercise/assets/115217596/f6990a22-8e87-49e5-8147-f3317bc02217)  
 
 Para este projeto, apenas utilizei esferas, pela sua simplicidade matemática. Para calcular a sua representação, tenho que calcular a sua interceção com um vetor e recolher o ponto de interceção entre os dois mais perto da câmara. Como já consigo mandar raios para qualquer pixel do ecrâ, quando este raio intercetar a esfera, consigo calcular a interceção entre os dois.  
-
+  
 Introduzindo isto no código e adicionando uma esfera simples, conseguimos a seguinte imagem:  
 
 ![img-1 03-red-sphere](https://github.com/ArKynn/SimplePathtracerExercise/assets/115217596/0e912622-7bc1-4396-a77a-ac8285073d76)  
@@ -69,13 +69,15 @@ Durante a criação do programa, fiquei muito colado ao código do autor. Enquan
 
 ## O que faltou adicionar ao projeto:  
 
-A meu ver, faltou adicionar os parâmetros Metalic e Smoothness aos materais e uma equação de calculo de côr e refleção mais universal. Neste momento, os materiais ou são metálicos, ou são difusos. Com uma equação geral e estes parâmetros, permite ao renderizador apresentar mais materiais diversos diferentes dos dois já adicionados.
-A meu ver, faltou adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
-Adicionalmente, gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
-Adicionalmente, mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.  
+- A meu ver, faltou adicionar os parâmetros Metalic e Smoothness aos materais e uma equação de calculo de côr e refleção mais universal. Neste momento, os materiais ou são metálicos, ou são difusos. Com uma equação geral e estes parâmetros, permite ao renderizador apresentar mais materiais diversos diferentes dos dois já adicionados.
+- A meu ver, faltou adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
+- Adicionalmente, gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
+- Adicionalmente, mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.  
 
 ## Conclusões:  
 
-Com este projeto, consegui mergulhar um pouco por dentro de como um pathtracer funciona. Aprendi como representamos o mundo atravéz de código e como traduzimos diversos fenómenos fisicos relacionados à luz em código. Apesar de não incluir no meu projeto, consegui aprender como representamos luz e sombras e diversas metodologias para o fazer.  
+Com este projeto, consegui mergulhar um pouco por dentro de como um pathtracer funciona. Aprendi como representamos o mundo atravéz de código e como traduzimos diversos fenómenos fisicos relacionados à luz em código. Apesar de não incluir no meu projeto, consegui aprender como representamos luz e sombras e diversas metodologias para o fazer. Também aprendi um pouco da importância que um version controller tem em um projeto. 
+  
 Infelizmente, não consegui obter um produto final funcional mas consegui aproveitar o periodo em que o renderizador fundionava para aprender como representamos raios, reflexões e materiais e como os manipulamos para representar o mundo á nossa volta.  
+  
 De certeza que irei futuramente voltar a este tema para poder obter um renderizador que representa precisamente os efeitos da luz em um meio fisico.
