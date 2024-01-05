@@ -42,3 +42,33 @@ Introduzindo isto no código e adicionando uma esfera simples, conseguimos a seg
 Para poder introduzir mais esferas, criei a classe abstrata RayHittable e fiz a classe Sphere filha desta classe base. Isto permitirá criar uma lista com objetos RayHittable para ser mais fácil os calculos quando houver vários objetos. A classe Hittable também introduz o metodo Hit que recebe um raio e apartir daí, a forma geométrica que foi Hit, terá os seus calculos para a interceção com o raio. Neste caso, apenas terei esferas mas, deixei o metodo para ser possivel extender futuramente o projeto para outras formas geométricas.  
 
 Também introduzi a classe Hit_Data, que irá guardar informação sobre o objeto que o raio interceta.
+
+A classe HittableList guarda outros objetos do tipo Hittable e permite verificar se há colisões com todos os objetos que a mesma guarda.  
+
+De seguida, adicionei um simples efeito de antialiasing que verifica os quatro pixeis mais perto do qual estamos a tratar e faz uma média das cores.  
+Logo a seguir, adicionei um material difuso simples. Quando um raio colide com uma esfera com este material, perde metade da sua intensidade e reflete para uma outra direção aleatória.  
+Atualizei o código e verifiquei o seguinte:  
+
+Esta imagem seria o resultado que, segundo o livro, eu deveria obter:  
+
+![img-1 07-first-diffuse](https://github.com/ArKynn/SimplePathtracerExercise/assets/115217596/428ad366-175e-4232-8b19-7519963e7119)  
+
+Ao invés disto eu obti uma imagem onde os não apresentavam redução na intensidade dos raios quando estes colidiam, o que fez com que as esferas não apresentassem cores diferentes. Como não cheguei a guardar nenhuma imagem, não consigo mostrar o meu resultado.  
+
+Sem conseguir resolver, decidi prosseguir com o livro, já que o problema estava relacionado com o material das esferas.  
+
+De seguida introduzi os materiais Metal e Labertian. Estes materiais apresentam diferentes formas em como os raios refletem na superficie da esfera: O material Metal reflete os raios como se fosse um espelho e o material Lambertian reflete os raios numa direção aleatória e atenua a cor do raio.  
+
+Quando testei o programa, deparei-me com um grande problema: Como tenho estado a seguir o autor que mostra código em c++, tive de o converter em algo semelhante em c#. No metodo scatter dos materiais que introduzi, não consigo reter as mudanças que o metodo faz numa variavel e isto causa que o programa pare de funcionar. Experimentei várias soluções mas nada resolveu. Com isto, não consegui continuar com o trabalho.  
+
+## O que correu mal:  
+  
+Durante a criação do programa, não guardei o meu progresso, por exemplo, em git. Tive problemas com alterações que fiz e tive perder tempo a voltar atrás no código para resolver estes mesmos.  
+  
+Durante a criação do programa, fiquei muito colado ao código do autor. Enquanto que isto pode não ser um grande problema, visto que estava a programar numa outra linguagem de programação, fêz com que eu tivesse vários problemas com a minha iteração do renderizador, que me custou muito tempo.  
+
+## O que eu gostaria de adicionar:  
+
+Gostaria de adicionar um material Dieletrico. Este material refrata os raios de luz quando estes colidem com o objeto. Para alcançar esta refração, utilizaria a lei de Snell.  
+Gostaria de adicionar luz e sombras ao projeto. Neste momento, o projeto não toma em consideração a presença de luz. Apesar de este tema não ser abordado neste primeiro livro, acho que o projeto estaria mais completo com luz e sombras.  
+Mais controlo na câmara. Neste momento, a câmara que o projeto usa não só não permite a modificação de posição e orientação, mas também não permite a mudança de field of view, nem produz depth of field.
